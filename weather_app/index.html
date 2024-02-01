@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="weather.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="col">
+        <!-- searchbar  -->
+        <form class="search" style="max-width: 700px">
+          <input
+            required
+            type="text"
+            id="cityInput"
+            class="searchbar"
+            style="padding: 10px; border-radius: 12px; border: none"
+            name="search"
+            placeholder="Search.."
+          />
+          <button id="searchButton">Search</button>
+        </form>
+
+        <div class="display">
+          <img src="" class="weather-icon" />
+          <h2 class="temp">0 F</h2>
+          <h2 class="city">City</h2>
+          <p class="day-date" style="font-size: 15px"></p>
+          <div class="details">
+            <div class="col">
+              <img src="img/humidity.png" />
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+            <div class="col">
+              <img src="img/wind.png" />
+              <p class="wind"></p>
+              <p>Wind speed</p>
+            </div>
+            <div class="col">
+              <img src="img/pressure.png" />
+              <p class="pressure"></p>
+              <p>Pressure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="past-data-1">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="past-data-2">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+  </body>
+</html>
